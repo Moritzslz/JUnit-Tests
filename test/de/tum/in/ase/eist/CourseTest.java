@@ -17,7 +17,7 @@ class CourseTest {
     @Test
     public void testNoAttendees() {
         Course course = new Course("EIST is the best");
-        assertEquals(0, course.getAttendees().size());
+        assertEquals(0, course.getNumberOfAttendees());
     }
 
     @Test
@@ -29,7 +29,7 @@ class CourseTest {
         course.addAttendee(student1);
         course.addAttendee(student2);
         course.addAttendee(student3);
-        assertEquals(3, course.getAttendees().size());
+        assertEquals(3, course.getNumberOfAttendees());
     }
 
 }
